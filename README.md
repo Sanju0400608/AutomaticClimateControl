@@ -17,7 +17,9 @@ This project simulates an **Automatic Climate Control** system in C++, modeled a
 
 ---
 
-## 📊 Validated Test Cases
+## 📊 Controller Results Summary
+
+Here’s an overview of controller behavior across three validated test cases, showcasing ControlDesk-style response:
 
 | Test Case | External Temp | Setpoint | Vin (V) | BlowerOut |
 | --------- | ------------- | -------- | ------- | --------- |
@@ -25,11 +27,27 @@ This project simulates an **Automatic Climate Control** system in C++, modeled a
 | Case 2    | 26°C          | 9°C      | 9.25    | 0.68      |
 | Case 3    | 10°C          | 28°C     | 14.00   | 0.72      |
 
-✅ ControlDesk-style output graphs for each case:
+### 🔍 Detailed Case Analysis
 
-* Case 1: <img src="https://raw.githubusercontent.com/Sanju0400608/AutomaticClimateControl/main/graphs/TEST01Results.png" width="800"/>
-* Case 2: <img src="https://raw.githubusercontent.com/Sanju0400608/AutomaticClimateControl/main/graphs/TEST02Results.png" width="800"/>
-* Case 3: <img src="https://raw.githubusercontent.com/Sanju0400608/AutomaticClimateControl/main/graphs/Test03Results.png" width="800"/>
+**Case 1**: External Temp = 25°C, Setpoint = 13°C
+
+* Result: Vin = 13.34V, BlowerOut = 0.48
+* Air distribution mode: Defrost (AirDistV = 2), Recirculation Off (RecycAirV = 0)
+* ➤ The system reacts to a moderate cooling need, increasing airflow moderately.
+
+**Case 2**: External Temp = 26°C, Setpoint = 9°C
+
+* Result: Vin = 9.25V, BlowerOut = 0.68
+* Air distribution mode: Defrost (AirDistV = 2), Recirculation Off (RecycAirV = 0)
+* ➤ A high cooling demand results in a stronger blower response.
+
+**Case 3**: External Temp = 10°C, Setpoint = 28°C
+
+* Result: Vin = 14.00V, BlowerOut = 0.72
+* Air distribution mode: Face (AirDistV = 0), Recirculation On (RecycAirV = 1)
+* ➤ Heating requirement triggers recirculation and high airflow toward passengers.
+
+  
 
 ---
 
@@ -60,7 +78,7 @@ AutomaticClimateControl/
 
 ---
 
-## 💻 Sample Output
+## 🖥️ Console Output Example (Case 1)
 
 ```
 External Temp: 25.0000 °C
@@ -77,6 +95,3 @@ RecycAirV (1=Recyc_On, 0=Recyc_Off): 0
 
 ---
 
-## 📄 License
-
-This project is released under the **MIT License**.

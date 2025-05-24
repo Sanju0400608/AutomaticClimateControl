@@ -29,7 +29,7 @@ This project simulates an **Automatic Climate Control** system in C++, modeled a
 
 * Case 1: <img src="https://raw.githubusercontent.com/Sanju0400608/AutomaticClimateControl/main/graphs/TEST01Results.png" width="800"/>
 * Case 2: <img src="https://raw.githubusercontent.com/Sanju0400608/AutomaticClimateControl/main/graphs/TEST02Results.png" width="800"/>
-* Case 3: <img src="https://raw.githubusercontent.com/Sanju0400608/AutomaticClimateControl/main/graphs/TEST03Results.png" width="800"/>
+* Case 3: <img src="https://raw.githubusercontent.com/Sanju0400608/AutomaticClimateControl/main/graphs/Test03Results.png" width="800"/>
 
 ---
 
